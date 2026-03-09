@@ -1,0 +1,6 @@
+services:
+  buf:
+    image: bufbuild/buf:latest
+    volumes:
+      - .:/workspace
+    working_dir: /workspace

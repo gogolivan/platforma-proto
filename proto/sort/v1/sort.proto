@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package platforma.sort.v1;
+
+import "buf/validate/validate.proto";
+
+enum Direction {
+  ASC = 0;
+  DESC = 1;
+}
+
+message Sort {
+  string field = 1 [(buf.validate.field).string.min_len = 1 ];
+
+  Direction direction = 2;
+}

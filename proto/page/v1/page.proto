@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package platforma.page.v1;
+
+import "buf/validate/validate.proto";
+
+message Page {
+  int32 size = 1 [(buf.validate.field).int32 = { in: [10, 25, 50, 100] }];
+  int32 page = 2 [(buf.validate.field).int32.gt = 0];
+}

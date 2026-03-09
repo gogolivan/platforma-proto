@@ -1,0 +1,30 @@
+= Platforma Proto
+
+== Getting Started
+=== Buf
+==== Help
+[source,shell]
+----
+docker-compose run --rm --remove-orphans buf --help
+----
+
+==== Init
+[source,shell]
+----
+docker-compose run --rm --remove-orphans buf init
+----
+
+==== Format
+[source,shell]
+----
+docker-compose run --rm --remove-orphans buf format
+----
+
+==== Lint
+[source,shell]
+----
+docker-compose run --rm --remove-orphans buf lint
+----
+
+== References
+https://buf.build/[Buf]
